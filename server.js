@@ -17,6 +17,8 @@ app.get('/hello', function(req, res) {
 });
 
 app.post('/api/fileanalyse', upload.single('upfile'), (req, res, next) => {
+  if (req.file === undefined) return res.json({ error: 'No file selected...' });
+
   const { originalname, mimetype, size } = req.file;
 
   const metadata = {

@@ -1,54 +1,64 @@
-/****** Main Styling ******/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
 
 body {
-	font-family: 'Roboto', sans-serif;
-	font-size: 16px;
-	color: #222;
-	background-color: #ECF0F1;
-	text-align: center;
+  background: lightgreen;
 }
 
 .container {
-	padding: 0;
-	margin-top: 40px;
+  background: white;
+  width: 90%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem 1rem;
+  box-shadow: 1px 1px 5px gray;
 }
 
-.footer {
-	margin-top: 60px;
+h1 {
+  text-align: center;
 }
 
-ol {
-	list-style-position: inside;
-}
-ul {
-	list-style-type: none;
+h2 {
+  margin: 1.25rem 0 0.35rem 0;
+  text-indent: 2rem;
 }
 
-a {
-	color: #2574A9;
+.desc {
+  background: linen;
+  text-indent: 4rem;
+  padding: 0.5rem 0;
 }
 
 input {
   display: block;
   position: relative;
   margin: 10px auto;
-
 }
+
 input#button {
   width: 230px;
 }
+
 .view {
-  position:relative;
+  position: relative;
   margin: auto;
-  margin-top: 40px;
-  border: 1px  solid  #aaa;
+  margin-top: 20px;
+  border: 1px solid #aaa;
   padding: 20px;
   width: 60%;
   min-width: 400px;
 }
-/****** Logo Div Styling ******/
 
-img {
-	margin: 20px auto 0 auto;
-	display: block;
+ol,
+.desc {
+  background: linen;
+  padding: 0.5rem;
+}
+
+li {
+  margin: 1rem 0 1rem 4rem;
 }
